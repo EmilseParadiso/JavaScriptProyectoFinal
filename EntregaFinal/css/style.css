@@ -1,0 +1,129 @@
+
+
+.titulo{
+    display: flex;
+    justify-content: space-around !important;
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+.nav{
+padding-left: 200px;
+}
+
+
+.fotos{
+    display: flex;
+    width: 160px;
+    height: 150px;
+
+}
+h3{
+    font-family: 'Permanent Marker', cursive;
+ 
+    background-color:FFFFE0;
+    color: black;
+    text-align: center;
+}
+    
+    
+p {
+    font-family: 'Permanent Marker', cursive;
+    background-color: black;
+    
+
+    
+}
+.precioProd{
+    font-family: 'Permanent Marker', cursive;
+    background-color:white;
+    color: black;
+
+
+
+}
+button{
+    font-family: 'Permanent Marker', cursive;
+    font-size: small;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background-color:FFFFE0;
+    color: black;
+
+}
+.boton{
+    transition: all ease 0.5s;
+		}
+
+
+col {
+    margin-bottom: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom:300;
+
+}
+input{
+    font-family: 'Permanent Marker', cursive;
+    font-size: x-large;
+    text-align: center;
+}
+.productocarrito, .total {
+    font-size: 20px;
+    width: 260px;
+    height:30px;
+    color: black;
+    background-color: FFFFE0;
+}
+.filtrar, #exito {
+    margin-top: 100px;
+    margin-left: 750px;
+    font-family: 'Permanent Marker', cursive;
+    color:black;
+    width: 500px;
+    height:30px;
+    background-color: ffffe0;
+} 
+body{
+  background-image:url("/Imagenes/backgroundimg.jpg");
+}
+.activo{
+    font-size: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-left-color: transparent;
+    animation: rotate 1.4s ease 0.5s infinite;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+.exitoso{
+    position: relative;
+    background-color: #fff;
+    animation: bounce .3s ease-in;
+}
+@keyframes bounce{
+    0%{
+        transform: scale(0.9);
+    }
+}
+.exitoso:before{
+    content: '';
+    position: absolute;
+    background: url("/Imagenes/ok.jpg") no-repeat;
+    border-radius: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    top: 8px;
+
+}
+

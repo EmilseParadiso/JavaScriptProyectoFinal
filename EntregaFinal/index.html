@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutti Frutti llego para solucionarte la vida</title>
+  
+<!-- llamo a boostrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+<!-- llamo a la fuente que voy a usar -->
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+<!-- llamo a el CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+<!-- llamo a JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+<!-- llamo a todos los productos que tengo -->
+  <script defer src="productos.js"></script>
+  
+<!-- llamo a mi JavaScript -->
+  <script defer src="app.js"></script>
+
+
+</head>
+
+<body id="main" class="main">
+
+<!-- Incluir el navbar, que contiene la imagen principal -->
+  <header id="cabeceraweb">
+    <div>
+      <nav id="navegacionprincipal" class="navbar navbar-light nav" style="background-color:white;">
+        <img class="imagenGrande" src="Imagenes/TuHuerta.jpg">
+      </nav>
+    </div>
+  </header>
+
+<!-- Un titulo sobre la grilla -->
+  <h1 class="titulo">Frutas-Verduras a tu elección</h1>
+
+<!-- La grilla que después se genera usando JavaScript -->
+  <div class="container">
+
+    <div class="row row-cols-6 productosGrilla" id="productos">
+
+    </div>
+
+  </div>
+  
+<!-- Con esto vamos luego a hacer una función para eliminar el carrito completo -->
+
+  <div class="filtrar">
+    <h4>Nuestro Carrito Frutero-Verdulero</h4>
+    <button id="eliminar" onclick="eliminarCarritoCompleto()">Vaciar el carrito :(</button>
+    <div id="carrito"></div>
+    <div id="totalCarrito"></div>
+  </div>
+  
+<!-- Fin del HTML con una finalización de compra-->
+  <div>
+    <button id="exito">Finalizar Compra</button>
+  </div>
+  <body>
+</html>
